@@ -4,3 +4,57 @@
   font-weight: normal;
   font-style: normal;
 }
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+}
+
+.page-left-side {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: url("images/new-york.jpg") no-repeat center/cover;
+  width: 30vw;
+}
+
+.page-left-side p {
+  color: #fff;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.page-left-side a {
+  color: #fff;
+}
+
+.logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "norsebold";
+  background-color: rgba(0, 0, 0, 0.5);
+  margin-top: 190px;
+  padding: 0.8rem;
+  gap: 1rem;
+}
+
+.logo-container img {
+  height: 130px;
+}
+
+.logo-container h1 {
+  font-size: 3.5rem;
+  color: #fff;
+}
+
+div.main-content-container {
+  width: 70vw;
+}
