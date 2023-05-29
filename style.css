@@ -4,6 +4,7 @@
   font-weight: normal;
   font-style: normal;
 }
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -11,12 +12,15 @@
 }
 
 body {
-  font-family: "Poppins", sans-serif;
   display: flex;
   flex-direction: row;
+  font-family: "Poppins", sans-serif;
+  background-color: #f4f4f4;
   height: 100vh;
+  line-height: 1.3;
 }
 
+/* Left side of the page styles */
 .page-left-side {
   display: flex;
   flex-direction: column;
@@ -55,6 +59,64 @@ body {
   color: #fff;
 }
 
-div.main-content-container {
+/* Presentation message, above form for user info */
+.main-content-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
   width: 70vw;
+}
+
+.main-content-container .sign-up-message {
+  font-size: 2rem;
+  width: 80%;
+  margin-left: 3rem;
+  font-weight: 500;
+}
+
+.sign-up-message p:last-child {
+  margin: 1rem 0;
+}
+
+
+/* Form container for user input */
+.form-container {
+  background-color: #f8f9fa;
+  box-shadow: 2px 4px 9px -4px #ADADAD;
+  padding-left: 3rem;
+  height: 350px;
+}
+
+.signup-form {
+  display: flex;
+  gap: 3rem;
+  height: 100%;
+}
+
+input {
+  font-size: 1.5rem;
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.form-container > p {
+  margin: 1rem 0;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+input:focus::placeholder {
+  color: transparent;
+}
+
+/* Button for send info and link to login */
+button[type="submit"] {
+  width: 100px;
+  margin-left: 3rem;
+}
+
+.main-content-container > p:last-child {
+  margin-left: 3rem;
 }
