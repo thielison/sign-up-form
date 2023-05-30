@@ -15,7 +15,7 @@ body {
   display: flex;
   flex-direction: row;
   font-family: "Poppins", sans-serif;
-  background-color: #f4f4f4;
+  background-color: #ffffff;
   height: 100vh;
   line-height: 1.3;
 }
@@ -69,7 +69,7 @@ body {
 }
 
 .main-content-container .sign-up-message {
-  font-size: 2rem;
+  font-size: 1.5rem;
   width: 80%;
   margin-left: 3rem;
   font-weight: 500;
@@ -82,10 +82,9 @@ body {
 
 /* Form container for user input */
 .form-container {
-  background-color: #f8f9fa;
-  box-shadow: 2px 4px 9px -4px #ADADAD;
+  background-color: #fcfcfc;
+  box-shadow: 0px 0px 2px 0px #ADADAD;
   padding-left: 3rem;
-  height: 350px;
 }
 
 .signup-form {
@@ -99,6 +98,18 @@ input {
   width: 100%;
   padding: 0.5rem;
   margin-bottom: 1.5rem;
+  border: 1px solid #E5E7EB;
+  border-radius: 5px;
+}
+
+input:focus {
+  box-shadow: 2px 2px 5px 0px #ADADAD;
+  outline: 1px solid #E5E7EB;
+}
+
+input:valid {
+  border: none;
+  border: 1px solid blue;
 }
 
 .form-container > p {
@@ -107,16 +118,38 @@ input {
   font-weight: 500;
 }
 
-input:focus::placeholder {
-  color: transparent;
-}
-
 /* Button for send info and link to login */
 button[type="submit"] {
-  width: 100px;
+  font-size: 1.5rem;
+  border: none;
+  color: #ffffff;
+  background-color: #e76f51;
+  border-radius: 0.7rem;
+  box-shadow: 3px 3px 5px 0px #ADADAD;
+  width: 230px;
+  padding: 0.8rem;
   margin-left: 3rem;
+  transition: 0.2s;
+}
+
+button[type="submit"]:hover {
+  color: #ff816b;
+  background-color: #000000;
+  transition: 0.2s;
+  cursor: pointer;
 }
 
 .main-content-container > p:last-child {
   margin-left: 3rem;
+  font-size: 1.5rem;
+}
+
+.main-content-container a {
+  color: #ff816b;
+  text-decoration: none;
+}
+
+.main-content-container a:hover {
+  color: #ff816b;
+  text-decoration: underline;
 }

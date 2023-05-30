@@ -14,7 +14,7 @@
         <div class="page-left-side">
             <div class="logo-container">
                 <img src="images/odin-lined.png" alt="odin logo" />
-                <h1>ODIN SIGN-UP FORM</h1>
+                <h1>SIGN-UP FORM</h1>
             </div>
             <p>
                 Photo dy
@@ -37,7 +37,7 @@
                     <div class="form-left-side">
                         <div>
                             <label for="first-name">FIRST NAME *</label>
-                            <input type="text" name="fname" id="first-name" required />
+                            <input type="text" name="fname" id="first-name" required pattern="\p{L}+" title="Only letters (uppercase or lowercase)" />
                         </div>
                         <div>
                             <label for="email">EMAIL *</label>
@@ -51,11 +51,18 @@
                     <div class="form-right-side">
                         <div>
                             <label for="last-name">LAST NAME *</label>
-                            <input type="text" name="lname" id="last-name" required />
+                            <input type="text" name="lname" id="last-name" required pattern="\p{L}+" title="Only letters (uppercase or lowercase)" />
                         </div>
                         <div>
-                            <label for="user-tel">PHONE NUMBER</label>
-                            <input type="tel" name="user-tel" id="user-tel" />
+                            <label for="user-tel">PHONE NUMBER *</label>
+                            <input
+                                type="tel"
+                                name="user-tel"
+                                id="user-tel"
+                                pattern="^(?:\d{2})?\d{5}-?\d{4}$"
+                                title="Brazilian cellphone number. Ex: (XX) 99999-9999 or XX999999999"
+                                required
+                            />
                         </div>
                         <div>
                             <label for="pwd-2">CONFIRM PASSWORD *</label>
