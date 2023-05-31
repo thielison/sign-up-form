@@ -52,19 +52,19 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 1rem;
   font-family: "norsebold";
   background-color: rgba(0, 0, 0, 0.5);
-  margin-top: 190px;
-  padding: 0.8rem;
-  gap: 1rem;
+  margin-top: 15vh;
+  height: 15vh;
 }
 
 .logo-container img {
-  height: 130px;
+  height: 80%;
 }
 
 .logo-container h1 {
-  font-size: 3.5rem;
+  font-size: 3.5em;
   color: #fff;
 }
 
