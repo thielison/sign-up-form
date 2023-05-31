@@ -9,6 +9,7 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;1,400;1,500&display=swap" rel="stylesheet" />
         <link rel="stylesheet" href="style.css" />
+        <script src="script.js" defer></script>
     </head>
     <body>
         <div class="page-left-side">
@@ -47,6 +48,7 @@
                             <label for="pwd-1">PASSWORD *</label>
                             <input type="password" name="pwd-1" id="pwd-1" required />
                         </div>
+                        <p class="psw-match-message"></p>
                     </div>
                     <div class="form-right-side">
                         <div>
@@ -54,14 +56,13 @@
                             <input type="text" name="lname" id="last-name" required pattern="\p{L}+" title="Only letters (uppercase or lowercase)" />
                         </div>
                         <div>
-                            <label for="user-tel">PHONE NUMBER *</label>
+                            <label for="user-tel">PHONE NUMBER</label>
                             <input
                                 type="tel"
                                 name="user-tel"
                                 id="user-tel"
                                 pattern="^(?:\d{2})?\d{5}-?\d{4}$"
                                 title="Brazilian cellphone number. Ex: (XX) 99999-9999 or XX999999999"
-                                required
                             />
                         </div>
                         <div>

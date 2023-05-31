@@ -85,6 +85,7 @@ body {
   background-color: #fcfcfc;
   box-shadow: 0px 0px 2px 0px #ADADAD;
   padding-left: 3rem;
+  height: 350px;
 }
 
 .signup-form {
@@ -107,15 +108,35 @@ input:focus {
   outline: 1px solid #E5E7EB;
 }
 
-input:valid {
+input[type=password] {
+  margin-bottom: 5px;
+}
+
+input[type="text"]:valid, 
+input[type="email"]:valid {
   border: none;
-  border: 1px solid blue;
+  border: 1px solid #36ca36;
+}
+
+input[type="tel"]:valid {
+  border: 1px solid #ebe5e5;
+}
+
+input[type="text"]:focus:invalid, 
+input[type="email"]:focus:invalid,  
+input[type="tel"]:focus:invalid,
+input[type="password"]:focus:invalid {
+  border: 1px solid #ff0000;
 }
 
 .form-container > p {
   margin: 1rem 0;
   font-size: 1.5rem;
   font-weight: 500;
+}
+
+.form-left-side p {
+  color: #ff0000;
 }
 
 /* Button for send info and link to login */
