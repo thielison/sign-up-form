@@ -5,6 +5,10 @@
   font-style: normal;
 }
 
+:root {
+  --main-font-size: 1.5rem; /* right side of page */
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -37,6 +41,11 @@ body {
 
 .page-left-side a {
   color: #fff;
+  text-decoration: none;
+}
+
+.page-left-side a:hover {
+  text-decoration: underline;
 }
 
 .logo-container {
@@ -69,7 +78,7 @@ body {
 }
 
 .main-content-container .sign-up-message {
-  font-size: 1.5rem;
+  font-size: var(--main-font-size);
   width: 80%;
   margin-left: 3rem;
   font-weight: 500;
@@ -95,7 +104,7 @@ body {
 }
 
 input {
-  font-size: 1.5rem;
+  font-size: var(--main-font-size);
   width: 100%;
   padding: 0.5rem;
   margin-bottom: 1.5rem;
@@ -130,8 +139,8 @@ input[type="password"]:focus:invalid {
 }
 
 .form-container > p {
+  font-size: var(--main-font-size);
   margin: 1rem 0;
-  font-size: 1.5rem;
   font-weight: 500;
 }
 
@@ -141,7 +150,7 @@ input[type="password"]:focus:invalid {
 
 /* Button for send info and link to login */
 button[type="submit"] {
-  font-size: 1.5rem;
+  font-size: var(--main-font-size);
   border: none;
   color: #ffffff;
   background-color: #e76f51;
@@ -161,8 +170,8 @@ button[type="submit"]:hover {
 }
 
 .main-content-container > p:last-child {
+  font-size: var(--main-font-size);
   margin-left: 3rem;
-  font-size: 1.5rem;
 }
 
 .main-content-container a {
