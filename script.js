@@ -27,5 +27,13 @@ function setInvalidState(pwd1, pwd2) {
     pwd2.style.border = "1px solid #ff0000";
 }
 
+// Formats the input[type="tel"] value as a Brazilian cellphone number.
+function cellFormat(input) {
+    $(input).inputmask({
+        mask: "(99) 99999-9999",
+        placeholder: " "
+    });
+}
+
 pwdField1.addEventListener("keyup", testPassword);
 pwdField2.addEventListener("keyup", testPassword);

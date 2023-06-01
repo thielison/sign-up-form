@@ -9,6 +9,10 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;1,400;1,500&display=swap" rel="stylesheet" />
         <link rel="stylesheet" href="style.css" />
+        <!-- jQuery and jQuery Inputmask libraries to use on telephone -->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/5.0.6/jquery.inputmask.min.js"></script>
+        <!-- scripts.js file -->
         <script src="script.js" defer></script>
     </head>
     <body>
@@ -61,8 +65,10 @@
                                 type="tel"
                                 name="user-tel"
                                 id="user-tel"
-                                pattern="^(?:\d{2})?\d{5}-?\d{4}$"
+                                pattern="\(\d{2}\) \d{4,5}-\d{4}"
                                 title="Brazilian cellphone number. Ex: (XX) 99999-9999 or XX999999999"
+                                inputmode="tel"
+                                oninput="cellFormat(this)"
                             />
                         </div>
                         <div>
