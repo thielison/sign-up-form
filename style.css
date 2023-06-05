@@ -92,23 +92,31 @@ body {
 .form-container {
   background-color: #fcfcfc;
   box-shadow: 0px 0px 2px 0px #ADADAD;
-  padding-left: 3rem;
   height: 350px;
 }
 
-.signup-form {
-  display: flex;
-  gap: 3rem;
-  height: 100%;
+.form-container > p {
+ padding-left: 3rem;
 }
 
-input {
+.signup-form {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(auto, 430px));
+  padding: 0 3rem 0 3rem;
+  gap: 1.5rem 3rem;
+}
+
+.signup-form input {
   font-size: var(--main-font-size);
   width: 100%;
   padding: 0.5rem;
-  margin-bottom: 1.5rem;
   border: 1px solid #E5E7EB;
   border-radius: 5px;
+}
+
+.signup-form label {
+  margin-bottom: 3px;
+  display: block;
 }
 
 input:focus {
@@ -143,7 +151,7 @@ input[type="password"]:focus:invalid {
   font-weight: 500;
 }
 
-.form-left-side p {
+.psw-match-message {
   color: #ff0000;
 }
 
